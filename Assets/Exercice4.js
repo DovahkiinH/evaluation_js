@@ -24,15 +24,13 @@ function Commande () {
 
     var PRIXREM = TOT - remise ;
 
-    if (PRIXREM => 500) {
+    if (PRIXREM >= 500) {
 
         var FPORT = 0;
 
-    }else if (PRIXREM < 500) {
-
-        FPORT = 6;
-
-    } else {
+    } 
+    
+    else {
 
         FPORT = Math.max(PRIXREM * 0.02, 6);
 
