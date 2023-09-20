@@ -19,7 +19,7 @@ function Commande () {
     else {
 
         remise = 0;
-        
+
     }
 
     var PRIXREM = TOT - remise ;
@@ -28,7 +28,7 @@ function Commande () {
 
         var FPORT = 0;
 
-    }else if (PRIXREM < 450) {
+    }else if (PRIXREM < 500) {
 
         FPORT = 6;
 
