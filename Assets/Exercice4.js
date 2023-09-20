@@ -7,25 +7,34 @@ function Commande () {
     if ((TOT => 100) && (TOT <= 200)) {
 
         var remise = TOT * 0.05 ;
-        var PRIXREM = TOT - remise ;
+    
     } else if (TOT> 200)
 
     {
 
         var remise = TOT * 0.1;
-        var PRIXREM = TOT - remise ;
 
     }
+
+    else {
+
+        remise = 0;
+        
+    }
+
+    var PRIXREM = TOT - remise ;
 
     if (PRIXREM => 500) {
 
         var FPORT = 0;
 
-    }else 
-    
-    {
+    }else if (PRIXREM < 450) {
 
-        var FPORT = Math.max(PRIXREM * 0.02 , 6);
+        FPORT = 6;
+
+    } else {
+
+        FPORT = Math.max(PRIXREM * 0.02, 6);
 
     }
 
