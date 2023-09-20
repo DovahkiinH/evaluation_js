@@ -32,7 +32,7 @@ ul {
   display: flex;
 }
 
-li a{
+li {
   padding: 5px;
 }
 
@@ -57,82 +57,3 @@ a:active {
   width: 100%;
 
 }
-
-.sidebar {
-
-  float: right;
-  height: 410px;
-  width: 25%;
-  background-color: lightgray;
-  margin-top: 5px;
-
-}
-
-.IT {
-
-  width: 25%;
-  height: 25%;
-
-}
-
-table {
-  border-width:1px; 
-  border-style:solid; 
-  border-color:black;
-  width:100%;
-  text-align: center;
-  }
-
-  td { 
-  border-width:1px;
-  border-style:solid; 
-  border-color:rgb(0, 0, 0);
-  width:18%;
-  text-align: center;
-  }
-
-  @media all and (max-width: 768px)
-
-  {
-    .menu {
-
-      display: flex;
-
-    }
-
-    ul {
-
-      flex-direction: column;
-
-    }
-
-    .sidebar {
-
-      display: none;
-      
-    }
-
-    .IT {
-
-      width: 70%;
-      height: 70%;
-    
-    }
-    
-    table {
-      border-width:1px; 
-      border-style:solid; 
-      border-color:black;
-      width:100%;
-      text-align: center;
-      }
-    
-      td { 
-      border-width:1px;
-      border-style:solid; 
-      border-color:rgb(0, 0, 0);
-      width:25%;
-      text-align: center;
-      }
-
-  }
