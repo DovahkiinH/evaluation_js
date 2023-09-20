@@ -66,11 +66,13 @@
     
             <label for="nom">Votre nom*:</label><input type="text" name="nom" id="nom" required="required" maxlength="20">
 
-            <span id="nom_manquant"></span>
+            <span id="nom_erreur"></span>
             
             <br>
     
             <label for="prénom">Votre prénom*:</label><input type="text" name="prénom" id="prénom" required="required">
+
+            <span id="prenom_erreur"></span>
             
             <br>
     
@@ -91,6 +93,8 @@
             <br>
     
             <label for="CodePostal">Code postal*:</label><input type="text" name="CodePostal" id="CodePostal" required="required">
+
+            <span id="CP_erreur"></span>
     
             <br>
     
@@ -99,10 +103,14 @@
             <br>
     
             <label for="Ville">Ville:</label><input type="text" name="Ville" id="Ville">
+
+            <span id="ville_erreur"></span>
     
             <br>
     
             <label for="email">Email*:</label><input type="email" name="email" id="email" placeholder="dave.loper@afpa.fr" required="required">
+
+            <span id="email_erreur"></span>
     
            </fieldset>
     
@@ -127,17 +135,21 @@
                 <option value="Autres">Autres</option>
     
             </select>
+
+            <span id="sujet_erreur"></span>
     
             <br>
     
             <label for="uname">Votre question : * </label>
     
-            <textarea name="Question" style="height: 40px;"> </textarea>
+            <textarea name="Question" style="height: 40px;" required> </textarea>
     
            </fieldset>
     
            <input type="checkbox" name="valider" value="valider" required="required"> <label for="uname"> * J'accepte le traitement informatique de ce formulaire </label>
     
+           <span id="valider_erreur"></span>
+
            <br>
     
            <button type="submit" id="bouton_envoie">Envoyer</button>
@@ -171,6 +183,11 @@
         </nav>
         
     </footer>
+
+    <script src="/Assets/Exercice5.js">
+
+
+    </script>
 
 </body>
 
